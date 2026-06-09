@@ -163,3 +163,51 @@ VALUES
 
 (19, 10, 'Edmure', 'Tully', 2, '410 River Rd', NULL, 'Riverrun', 'Riverlands', '57004', '555-2019', 'edmure.tully@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
 (20, 10, 'Robb', 'Stark', 6, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2020', 'robb.stark@demo.com', 0, 'Backup contact listed', 'Secondary contact');
+
+INSERT INTO next_of_kin (
+    id,
+    donor_id,
+    first_name,
+    last_name,
+    relationship_id,
+    address1,
+    address2,
+    city,
+    state,
+    zip,
+    phone,
+    email,
+    primary_nok,
+    conversation_log,
+    additional_notes
+)
+VALUES
+(21, 11, 'Catelyn', 'Stark', 6, '400 River Rd', NULL, 'Riverrun', 'Riverlands', '57004', '555-2021', 'catelyn.stark@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(22, 11, 'Robb', 'Stark', 7, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2022', 'robb.stark@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(23, 12, 'Daenerys', 'Targaryen', 6, '200 Dragon Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2023', 'daenerys.targaryen@demo.com', 1, 'Confirmed by phone', 'Primary contact'),
+(24, 12, 'Jorah', 'Mormont', 4, '500 Bear Rd', NULL, 'Bear Island', 'North', '57005', '555-2024', 'jorah.mormont@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(25, 13, 'Lyanna', 'Mormont', 2, '500 Bear Rd', NULL, 'Bear Island', 'North', '57005', '555-2025', 'lyanna.mormont@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(26, 13, 'Daenerys', 'Targaryen', 4, '200 Dragon Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2026', 'daenerys.targaryen@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(27, 14, 'Jaime', 'Lannister', 4, '300 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2027', 'jaime.lannister@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
+(28, 14, 'Podrick', 'Payne', 4, '700 Knight St', NULL, 'Kings Landing', 'Crownlands', '57007', '555-2028', 'podrick.payne@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(29, 15, 'Yara', 'Greyjoy', 2, '800 Kraken Bay', NULL, 'Pyke', 'Iron Islands', '57008', '555-2029', 'yara.greyjoy@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(30, 15, 'Euron', 'Greyjoy', 3, '802 Kraken Bay', NULL, 'Pyke', 'Iron Islands', '57008', '555-2030', 'euron.greyjoy@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(31, 16, 'Jon', 'Snow', 6, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2031', 'jon.snow@demo.com', 1, 'Confirmed by phone', 'Primary contact'),
+(32, 16, 'Tormund', 'Giantsbane', 4, '900 Freefolk Rd', NULL, 'Beyond Wall', 'North', '57009', '555-2032', 'tormund.giantsbane@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(33, 17, 'Gilly', 'Tarly', 6, '600 Citadel Ln', NULL, 'Oldtown', 'Reach', '57006', '555-2033', 'gilly.tarly@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(34, 17, 'Jon', 'Snow', 4, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2034', 'jon.snow@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(35, 18, 'Arya', 'Stark', 4, '102 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2035', 'arya.stark@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
+(36, 18, 'Davos', 'Seaworth', 4, '220 Onion St', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2036', 'davos.seaworth@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(37, 19, 'Grey', 'Worm', 6, '230 Dragon Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2037', 'grey.worm@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(38, 19, 'Daenerys', 'Targaryen', 4, '200 Dragon Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2038', 'daenerys.targaryen@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(39, 20, 'Matthos', 'Seaworth', 7, '220 Onion St', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2039', 'matthos.seaworth@demo.com', 1, 'Confirmed by phone', 'Primary contact'),
+(40, 20, 'Stannis', 'Baratheon', 4, '240 Stag Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2040', 'stannis.baratheon@demo.com', 0, 'Backup contact listed', 'Secondary contact');
