@@ -116,3 +116,50 @@ VALUES
 (18, 18, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 19, 0, NULL, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Workplace hand injury', 'Anatomy Lab', 'Demo record'),
 (19, 19, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 1, 9, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'None', 'Linguistics Study', 'Demo record'),
 (20, 20, 1, 63, 'Knee', 1, 60, 0, NULL, 1, 49, 1, 21, 1, 7, 0, 0, NULL, 0, NULL, 'Cardiac bypass', 'None', 'Hypertension', 'Old hand injury', 'Anatomy Lab', 'Demo record');
+INSERT INTO next_of_kin (
+    id,
+    donor_id,
+    first_name,
+    last_name,
+    relationship_id,
+    address1,
+    address2,
+    city,
+    state,
+    zip,
+    phone,
+    email,
+    primary_nok,
+    conversation_log,
+    additional_notes
+)
+VALUES
+(1, 1, 'Sansa', 'Stark', 1, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2001', 'sansa.stark@demo.com', 1, 'Initial contact completed', 'Primary family contact'),
+(2, 1, 'Arya', 'Stark', 2, '102 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2002', 'arya.stark@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(3, 2, 'Viserys', 'Targaryen', 3, '200 Dragon Rd', NULL, 'Dragonstone', 'Crownlands', '57002', '555-2003', 'viserys.targaryen@demo.com', 0, 'Phone message left', 'Secondary contact'),
+(4, 2, 'Missandei', 'Naath', 4, '210 Dragon Rd', 'Apt 2', 'Dragonstone', 'Crownlands', '57002', '555-2004', 'missandei.naath@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
+
+(5, 3, 'Jaime', 'Lannister', 2, '300 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2005', 'jaime.lannister@demo.com', 1, 'Initial contact completed', 'Primary family contact'),
+(6, 3, 'Cersei', 'Lannister', 2, '302 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2006', 'cersei.lannister@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(7, 4, 'Sansa', 'Stark', 2, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2007', 'sansa.stark@demo.com', 1, 'Confirmed by phone', 'Primary contact'),
+(8, 4, 'Bran', 'Stark', 2, '104 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2008', 'bran.stark@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(9, 5, 'Bran', 'Stark', 2, '104 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2009', 'bran.stark@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(10, 5, 'Arya', 'Stark', 2, '102 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2010', 'arya.stark@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(11, 6, 'Sansa', 'Stark', 2, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2011', 'sansa.stark@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
+(12, 6, 'Samwell', 'Tarly', 4, '600 Citadel Ln', NULL, 'Oldtown', 'Reach', '57006', '555-2012', 'samwell.tarly@demo.com', 0, 'Backup contact listed', 'Academic contact'),
+
+(13, 7, 'Jaime', 'Lannister', 2, '300 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2013', 'jaime.lannister@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(14, 7, 'Tyrion', 'Lannister', 2, '304 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2014', 'tyrion.lannister@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(15, 8, 'Cersei', 'Lannister', 2, '302 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2015', 'cersei.lannister@demo.com', 1, 'Confirmed by phone', 'Primary contact'),
+(16, 8, 'Tyrion', 'Lannister', 2, '304 Lion Ave', NULL, 'Casterly Rock', 'Westerlands', '57003', '555-2016', 'tyrion.lannister@demo.com', 0, 'Backup contact listed', 'Secondary contact'),
+
+(17, 9, 'Catelyn', 'Stark', 5, '400 River Rd', NULL, 'Riverrun', 'Riverlands', '57004', '555-2017', 'catelyn.stark@demo.com', 1, 'Initial contact completed', 'Primary contact'),
+(18, 9, 'Sansa', 'Stark', 2, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2018', 'sansa.stark@demo.com', 0, 'Email sent', 'Secondary contact'),
+
+(19, 10, 'Edmure', 'Tully', 2, '410 River Rd', NULL, 'Riverrun', 'Riverlands', '57004', '555-2019', 'edmure.tully@demo.com', 1, 'Confirmed arrangements', 'Primary contact'),
+(20, 10, 'Robb', 'Stark', 6, '100 Stark Way', NULL, 'Winterfell', 'North', '57001', '555-2020', 'robb.stark@demo.com', 0, 'Backup contact listed', 'Secondary contact');
