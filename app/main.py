@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from sqlalchemy import text
 from app.database import SessionLocal
+from app.schemas import DonorCreate
 
 app = FastAPI(title="Body Donation API")
 
@@ -163,3 +164,28 @@ def get_donor_profile(donor_id: int):
 
     db.close()
     return profile
+@app.post("/donors")
+def create_donor(donor: DonorCreate):
+    db = SessionLocal()
+
+    result = db.execute(text("""
+        INSERT INTO donors (
+            first_name, last_name, title, dob, dod, cause_of_death,
+            gender, occupation, city, state, phone, email,
+            initial_contact, studies, veteran, tag_number
+        )
+        VALUES (
+            :first_name, :last_name, :title, :dob, :dod, :cause_of_death,
+            :gender, :occupation, :city, :state, :phone, :email,
+            :initial_contact, :studies, :veteran, :tag_number
+        )
+    """), donor.model_dump())
+
+    db.commit()
+    new_id = result.lastrowid
+    db.close()
+
+    return {
+        "message": "Donor created successfully",
+        "donor_id": new_id
+    }
