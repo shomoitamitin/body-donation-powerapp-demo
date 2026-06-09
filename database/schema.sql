@@ -49,3 +49,8 @@ CREATE TABLE medical_history (
     additional_notes TEXT,
     FOREIGN KEY (donor_id) REFERENCES donors(id)
 );
+-- Relationship Table
+CREATE TABLE relationships (
+    id INTEGER PRIMARY KEY,
+    relationship_name TEXT NOT NULL
+);
