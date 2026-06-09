@@ -23,9 +23,25 @@ This project demonstrates a sample donor management workflow using Microsoft Pow
 - Power Automate
 - GitHub documentation
 
+## Demo Data Model
+
+The demo Excel workbook includes the following tables:
+
+- tblDonors
+- tblMedicalHistory
+- tblEmbalming
+- tblNextOfKin
+- tblFuneralHome
+- tblRelationship
+
+The data model demonstrates a multi-table donor management workflow using fictional demo data.
+
 ## Project Status
 
-This repository currently contains project documentation. Screenshots, sample Excel data, and setup instructions will be added in the next steps.
+- Repository structure created
+- Demo Excel data source added
+- Data model documentation added
+- Power Apps screenshots and setup guide will be added next
 
 ## Note
 
