@@ -74,3 +74,22 @@ CREATE TABLE next_of_kin (
     FOREIGN KEY (donor_id) REFERENCES donors(id),
     FOREIGN KEY (relationship_id) REFERENCES relationships(id)
 );
+-- Funeral Homes Table
+CREATE TABLE funeral_homes (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    first_name TEXT,
+    last_name TEXT,
+    address1 TEXT,
+    address2 TEXT,
+    city TEXT,
+    state TEXT,
+    zip TEXT,
+    phone TEXT,
+    fax TEXT,
+    email TEXT,
+    conversation_log TEXT,
+    additional_notes TEXT,
+    review BOOLEAN,
+    archive BOOLEAN
+);
