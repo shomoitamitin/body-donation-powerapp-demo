@@ -54,3 +54,23 @@ CREATE TABLE relationships (
     id INTEGER PRIMARY KEY,
     relationship_name TEXT NOT NULL
 );
+--- NOOK Table 
+CREATE TABLE next_of_kin (
+    id INTEGER PRIMARY KEY,
+    donor_id INTEGER NOT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    relationship_id INTEGER,
+    address1 TEXT,
+    address2 TEXT,
+    city TEXT,
+    state TEXT,
+    zip TEXT,
+    phone TEXT,
+    email TEXT,
+    primary_nok BOOLEAN,
+    conversation_log TEXT,
+    additional_notes TEXT,
+    FOREIGN KEY (donor_id) REFERENCES donors(id),
+    FOREIGN KEY (relationship_id) REFERENCES relationships(id)
+);
