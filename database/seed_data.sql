@@ -94,3 +94,25 @@ VALUES
 (8, 8, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 20, 1, 8, 0, 0, NULL, 0, NULL, 'Hand surgery', 'None', 'None', 'Hand injury', 'Anatomy Lab', 'Demo record'),
 (9, 9, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 17, 0, NULL, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Combat injuries', 'Trauma Study', 'Demo record'),
 (10, 10, 1, 58, 'Hip', 0, NULL, 0, NULL, 1, 50, 1, 19, 1, 9, 5, 0, NULL, 1, 31, 'None', 'None', 'Arthritis', 'Prior trauma', 'Anatomy Lab', 'Demo record');
+INSERT INTO medical_history (
+    id, donor_id, joint_replacement, joint_replacement_age, joints,
+    heart_surgery, heart_surgery_age, spine_surgery, spine_surgery_age,
+    gall_bladder_removed, gall_bladder_removed_age,
+    appendix_removed, appendix_removed_age,
+    tonsils_removed, tonsils_removed_age,
+    num_pregnancies, hysterectomy, hysterectomy_age,
+    cesarean_section, cesarean_section_age,
+    other_surgeries, cancer_history_treatment,
+    illnesses, injuries, cadaver_utilization, additional_notes
+)
+VALUES
+(11, 11, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 18, 1, 7, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Prior combat injury', 'Anatomy Lab', 'Demo record'),
+(12, 12, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, 0, NULL, 0, NULL, 'Wound treatment', 'None', 'Infection', 'Chest wound', 'Pathology Lab', 'Demo record'),
+(13, 13, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 26, 1, 8, 0, 0, NULL, 0, NULL, 'Skin treatment', 'None', 'Skin condition', 'Combat injuries', 'Anatomy Lab', 'Demo record'),
+(14, 14, 0, NULL, 'None', 0, NULL, 0, NULL, 1, 44, 0, NULL, 1, 6, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Prior fractures', 'Musculoskeletal Lab', 'Demo record'),
+(15, 15, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 20, 0, NULL, 0, 0, NULL, 0, NULL, 'Reconstructive surgery', 'None', 'Anxiety history', 'Trauma history', 'Forensics Lab', 'Demo record'),
+(16, 16, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 1, 8, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Arrow wound', 'Anatomy Lab', 'Demo record'),
+(17, 17, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 24, 1, 10, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Minor injuries', 'Neurology Lab', 'Demo record'),
+(18, 18, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 19, 0, NULL, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Workplace hand injury', 'Anatomy Lab', 'Demo record'),
+(19, 19, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 1, 9, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'None', 'Linguistics Study', 'Demo record'),
+(20, 20, 1, 63, 'Knee', 1, 60, 0, NULL, 1, 49, 1, 21, 1, 7, 0, 0, NULL, 0, NULL, 'Cardiac bypass', 'None', 'Hypertension', 'Old hand injury', 'Anatomy Lab', 'Demo record');
