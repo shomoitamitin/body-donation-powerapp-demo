@@ -71,3 +71,26 @@ VALUES
 (18, 'Gendry', 'Waters', 'Mr', '1991-04-04', '2025-06-20', 'Workplace Injury', 'M', 'Blacksmith', 'Kings Landing', 'Crownlands', '555-1018', 'gendry.waters@demo.com', '2024-11-27', 'Anatomy', 0, 5018),
 (19, 'Missandei', 'Naath', 'Ms', '1992-03-03', '2025-07-01', 'Execution', 'F', 'Translator', 'Naath', 'Essos', '555-1019', 'missandei.naath@demo.com', '2024-11-28', 'Linguistics', 0, 5019),
 (20, 'Davos', 'Seaworth', 'Mr', '1970-07-07', '2025-07-10', 'Natural Causes', 'M', 'Advisor', 'Dragonstone', 'Crownlands', '555-1020', 'davos.seaworth@demo.com', '2024-11-30', 'Anatomy', 1, 5020);
+
+INSERT INTO medical_history (
+    id, donor_id, joint_replacement, joint_replacement_age, joints,
+    heart_surgery, heart_surgery_age, spine_surgery, spine_surgery_age,
+    gall_bladder_removed, gall_bladder_removed_age,
+    appendix_removed, appendix_removed_age,
+    tonsils_removed, tonsils_removed_age,
+    num_pregnancies, hysterectomy, hysterectomy_age,
+    cesarean_section, cesarean_section_age,
+    other_surgeries, cancer_history_treatment,
+    illnesses, injuries, cadaver_utilization, additional_notes
+)
+VALUES
+(1, 1, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 22, 1, 8, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Prior shoulder strain', 'Anatomy Lab', 'Demo record'),
+(2, 2, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 1, 7, 0, 0, NULL, 0, NULL, 'None', 'None', 'Respiratory sensitivity', 'None', 'Neurology Lab', 'Demo record'),
+(3, 3, 0, NULL, 'None', 0, NULL, 0, NULL, 1, 39, 1, 18, 1, 10, 0, 0, NULL, 0, NULL, 'Minor hand surgery', 'None', 'None', 'Old leg injury', 'Anatomy Lab', 'Demo record'),
+(4, 4, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 16, 0, NULL, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Minor cuts and scars', 'Forensics Lab', 'Demo record'),
+(5, 5, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 0, NULL, 1, 9, 0, 0, NULL, 0, NULL, 'None', 'None', 'Migraine history', 'None', 'Anatomy Lab', 'Demo record'),
+(6, 6, 0, NULL, 'None', 0, NULL, 1, 21, 0, NULL, 0, NULL, 0, NULL, 0, 0, NULL, 0, NULL, 'Spinal stabilization', 'None', 'Neurological condition', 'Fall-related injury', 'Neurology Lab', 'Demo record'),
+(7, 7, 1, 55, 'Knee', 0, NULL, 0, NULL, 1, 42, 0, NULL, 1, 6, 3, 1, 48, 1, 30, 'Cosmetic surgery', 'None', 'Hypertension', 'None', 'Anatomy Lab', 'Demo record'),
+(8, 8, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 20, 1, 8, 0, 0, NULL, 0, NULL, 'Hand surgery', 'None', 'None', 'Hand injury', 'Anatomy Lab', 'Demo record'),
+(9, 9, 0, NULL, 'None', 0, NULL, 0, NULL, 0, NULL, 1, 17, 0, NULL, 0, 0, NULL, 0, NULL, 'None', 'None', 'None', 'Combat injuries', 'Trauma Study', 'Demo record'),
+(10, 10, 1, 58, 'Hip', 0, NULL, 0, NULL, 1, 50, 1, 19, 1, 9, 5, 0, NULL, 1, 31, 'None', 'None', 'Arthritis', 'Prior trauma', 'Anatomy Lab', 'Demo record');
