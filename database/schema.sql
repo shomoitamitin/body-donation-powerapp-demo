@@ -19,3 +19,33 @@ CREATE TABLE donors (
     veteran BOOLEAN,
     tag_number INTEGER
 );
+--- Medical History Table
+CREATE TABLE medical_history (
+    id INTEGER PRIMARY KEY,
+    donor_id INTEGER NOT NULL,
+    joint_replacement BOOLEAN,
+    joint_replacement_age INTEGER,
+    joints TEXT,
+    heart_surgery BOOLEAN,
+    heart_surgery_age INTEGER,
+    spine_surgery BOOLEAN,
+    spine_surgery_age INTEGER,
+    gall_bladder_removed BOOLEAN,
+    gall_bladder_removed_age INTEGER,
+    appendix_removed BOOLEAN,
+    appendix_removed_age INTEGER,
+    tonsils_removed BOOLEAN,
+    tonsils_removed_age INTEGER,
+    num_pregnancies INTEGER,
+    hysterectomy BOOLEAN,
+    hysterectomy_age INTEGER,
+    cesarean_section BOOLEAN,
+    cesarean_section_age INTEGER,
+    other_surgeries TEXT,
+    cancer_history_treatment TEXT,
+    illnesses TEXT,
+    injuries TEXT,
+    cadaver_utilization TEXT,
+    additional_notes TEXT,
+    FOREIGN KEY (donor_id) REFERENCES donors(id)
+);
