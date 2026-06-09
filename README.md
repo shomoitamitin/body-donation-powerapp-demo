@@ -1,48 +1,68 @@
-# Body Donation Power App Demo
+# Body Donation Management API
 
-A demo Power Apps Canvas Application concept for donor registration, medical history tracking, embalming records, and reporting.
-
-## Overview
-
-This project demonstrates a sample donor management workflow using Microsoft Power Apps. It is designed as a portfolio project using demo data only.
+A FastAPI and SQLite demonstration project inspired by a real-world donor management workflow.
 
 ## Features
 
-- Donor registration form
-- Medical history tracking
-- Embalming information records
-- Funeral home information
-- Search and filter donor records
-- Basic reporting workflow
+* Donor registration and management
+* Medical history tracking
+* Next of Kin management
+* Funeral home management
+* Donor profile aggregation
+* REST API with Swagger documentation
 
 ## Technologies
 
-- Microsoft Power Apps
-- Power Fx
-- Excel demo data source
-- Power Automate
-- GitHub documentation
+* Python
+* FastAPI
+* SQLite
+* SQLAlchemy
+* GitHub Codespaces
 
-## Demo Data Model
+## API Endpoints
 
-The demo Excel workbook includes the following tables:
+### Donors
 
-- tblDonors
-- tblMedicalHistory
-- tblEmbalming
-- tblNextOfKin
-- tblFuneralHome
-- tblRelationship
+* GET /donors
+* GET /donors/{id}
+* GET /donors/{id}/profile
 
-The data model demonstrates a multi-table donor management workflow using fictional demo data.
+### Medical History
 
-## Project Status
+* GET /donors/{id}/medical-history
 
-- Repository structure created
-- Demo Excel data source added
-- Data model documentation added
-- Power Apps screenshots and setup guide will be added next
+### Next of Kin
 
-## Note
+* GET /donors/{id}/next-of-kin
 
-This is a demo portfolio project. It does not contain real donor data, employer-owned data, or proprietary application code.
+### Funeral Homes
+
+* GET /funeral-homes
+
+## Database Design
+
+The project includes:
+
+* donors
+* medical_history
+* next_of_kin
+* relationships
+* funeral_homes
+* embalming
+
+## Demo Data
+
+The database contains fictional Game of Thrones–inspired records for demonstration purposes only.
+
+## Run Locally
+
+```bash
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+Open:
+
+http://localhost:8000/docs
+
+to access the Swagger API documentation.
