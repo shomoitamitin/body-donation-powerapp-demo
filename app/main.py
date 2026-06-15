@@ -7,6 +7,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi import Request
 
 app = FastAPI(title="Body Donation API")
+templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/")
