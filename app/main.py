@@ -2,6 +2,9 @@ from fastapi import FastAPI
 from sqlalchemy import text
 from app.database import SessionLocal
 from app.schemas import DonorCreate
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
+from fastapi import Request
 
 app = FastAPI(title="Body Donation API")
 
