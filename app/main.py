@@ -10,9 +10,9 @@ app = FastAPI(title="Body Donation API")
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/")
-def home():
-    return {"message": "Body Donation API is running"}
+@app.get("/", response_class=HTMLResponse)
+def home(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request})
 
 
 @app.get("/donors")
